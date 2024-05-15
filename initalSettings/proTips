@@ -1,0 +1,5 @@
+- If you need to change the language of your operating system use:
+
+sudo dpkg-reconfigure locales
+
+And select the lenguage you prefer

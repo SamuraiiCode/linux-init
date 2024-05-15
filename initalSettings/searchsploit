@@ -1,0 +1,22 @@
+1. Open datebase repository
+
+https://github.com/offensive-security/exploitdb
+
+2.Clone the database repository
+
+sudo git clone  https://gitlab.com/exploit-database/exploitdb.git
+
+NOTE: Example clone it in Documents
+
+3.Create a symbolic link to use this functionality anywhere in the system
+
+sudo ln -sf /home/samuraii/Documents/exploitdb/searchsploit /usr/local/bin/searchsploit
+
+NOTE: If you need to remove a symbolic link, you can use the next comand
+
+sudo unlink /usr/local/bin/searchsploit 
+
+it's same 
+
+sudo unlink "HERE YOUR SYMBOLIC PATH"
+ 

