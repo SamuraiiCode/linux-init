@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Jun 14 00:03:35 2024 as: nmap -p- --open --min-rate 5000 -sS -vvv -n -Pn -oG allPorts 10.10.10.68
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.68 ()	Status: Up
+Host: 10.10.10.68 ()	Ports: 80/open/tcp//http///
+# Nmap done at Fri Jun 14 00:03:50 2024 -- 1 IP address (1 host up) scanned in 14.74 seconds

